@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-// Async thunk для добавление заметки
+
 export const addNote = createAsyncThunk(
    'notes/addNote',
    async (noteText, { rejectWithValue }) => {
@@ -25,7 +25,7 @@ export const addNote = createAsyncThunk(
    }
 );
 
-// Notes slice
+
 const notesSlice = createSlice({
    name: 'notes',
    initialState: [],
